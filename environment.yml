@@ -4,7 +4,7 @@ channels:
   - conda-forge                                                                                                                                               
   - defaults                                                                                                                                                  
 dependencies:
-  - cuda-toolkit=11.8
+  - cudatoolkit=11.8
   - cudnn
   - scipy
   - opencv
