@@ -1,19 +1,14 @@
 name: nedo                                                                                                                                               
-channels:
-  - nvidia                                                                                                                                                 
+channels:                                                                                                                                          
   - conda-forge                                                                                                                                               
   - defaults                                                                                                                                                  
 dependencies:
-  - cudatoolkit=11.8
-  - cudnn
   - scipy
   - opencv
   - lap
   - filterpy
-  - celery
-  - celery[redis]
   - pandas
   - watchdog
+  - onnxruntime
   - pip:
     - qdrant-client
-    - onnxruntime-gpu

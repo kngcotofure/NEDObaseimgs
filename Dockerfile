@@ -1,7 +1,8 @@
 FROM hieupth/mamba:essential as BUILD
 ARG PAT
+ARG CUDA
 
-ADD environment.yml environment.yml
+ADD ${CUDA}env.yml environment.yml
 RUN apt-get update --yes && \
     apt-get install --yes git && \
     mamba install -c conda-forge conda-pack && \

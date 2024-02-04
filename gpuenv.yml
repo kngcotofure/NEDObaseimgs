@@ -1,0 +1,17 @@
+name: nedo                                                                                                                                               
+channels:
+  - nvidia                                                                                                                                                 
+  - conda-forge                                                                                                                                               
+  - defaults                                                                                                                                                  
+dependencies:
+  - cudatoolkit=11.8
+  - cudnn
+  - scipy
+  - opencv
+  - lap
+  - filterpy
+  - pandas
+  - watchdog
+  - pip:
+    - qdrant-client
+    - onnxruntime-gpu
